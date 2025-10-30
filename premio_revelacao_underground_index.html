@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Prêmio Revelação Underground — Masterpiece</title>
+  <style>
+    :root{--bg:#000;--card:#0f0f0f;--muted:#9ca3af;--accent:#ff7a00}
+    html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial}
+    body{background:var(--bg);color:#fff;display:flex;align-items:center;justify-content:center;padding:24px}
+    .wrap{max-width:900px;width:100%;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:14px;padding:28px}
+    .brand{display:flex;gap:16px;align-items:center}
+    .logo{width:66px;height:66px;border-radius:10px;background:var(--accent);display:flex;align-items:center;justify-content:center;color:#000;font-weight:800;font-size:20px}
+    h1{margin:0;font-size:24px}
+    p.lead{color:var(--muted);margin-top:6px}
+    .grid{display:grid;grid-template-columns:1fr 360px;gap:20px;margin-top:20px}
+    .card{background:var(--card);padding:16px;border-radius:10px}
+    .btn{display:inline-block;background:var(--accent);color:#000;padding:12px 16px;border-radius:10px;text-decoration:none;font-weight:700}
+    ul{color:var(--muted);margin:12px 0 0;padding-left:18px}
+    .small{color:var(--muted);font-size:13px}
+    footer{margin-top:18px;color:var(--muted);font-size:13px}
+    @media(max-width:880px){.grid{grid-template-columns:1fr;}.card{order:2}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">
+      <div class="logo">MP</div>
+      <div>
+        <h1>Prêmio Revelação Underground</h1>
+        <p class="lead">Organizado pela Masterpiece. Envie sua música e ganhe visibilidade dentro do cenário urbano brasileiro.</p>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div>
+        <div class="card">
+          <h2>Como funciona</h2>
+          <ul>
+            <li>Taxa de inscrição simbólica (ex: R$50) — pagamento via PIX após preencher o formulário.</li>
+            <li>Envie o link da faixa (SoundCloud / Drive / WeTransfer) — não precisa enviar arquivo aqui.</li>
+            <li>Curadoria por júri + votação popular.</li>
+          </ul>
+
+          <div style="margin-top:14px">
+            <strong class="small">Instruções rápidas (passo a passo):</strong>
+            <ol style="color:var(--muted);margin-top:8px;padding-left:18px">
+              <li>Clique em "Inscrever minha faixa"</li>
+              <li>Preencha o formulário com seus dados e cole o link da sua faixa</li>
+              <li>Você verá as instruções de pagamento via PIX — finalize o pagamento</li>
+              <li>Sua inscrição passa para a fase de curadoria</li>
+            </ol>
+          </div>
+        </div>
+
+        <footer>
+          <div>Contato: contato@masterpiece.com (ou Instagram @masterpiece)</div>
+          <div style="margin-top:8px">Obs: após o envio, pedimos que publique o comprovante de pagamento no formulário para confirmação.</div>
+        </footer>
+      </div>
+
+      <div>
+        <div class="card" style="text-align:center">
+          <h3>Inscreva sua faixa</h3>
+          <p class="small">Clique no botão abaixo para abrir o formulário de inscrição (Google Forms).</p>
+          <a id="formBtn" class="btn" href="#" target="_blank">Inscrever minha faixa</a>
+
+          <div style="margin-top:12px;text-align:left" class="small">
+            <strong>Como pagar (PIX)</strong>
+            <p style="margin:6px 0;color:var(--muted)">Chave PIX: <strong>seu-pix-aqui</strong><br>Valor: <strong>R$50</strong><br>Após pagar, volte ao formulário e faça upload do comprovante (ou cole link do comprovante).</p>
+            <div style="background:#0b0b0b;padding:8px;border-radius:8px;margin-top:8px;color:var(--muted)">Dica: se não tem onde hospedar o áudio, suba no WeTransfer ou Google Drive e cole o link no formulário (configurar link com acesso público).</div>
+          </div>
+        </div>
+
+        <div style="height:14px"></div>
+
+        <div class="card small">
+          <strong>Precisa de ajuda?</strong>
+          <p style="margin:6px 0;color:var(--muted)">Me manda o link da sua faixa e eu te guio no envio.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Link do seu Google Form
+    const googleFormLink = "https://forms.gle/hVSUvEVQWMkrzpQPA";
+    document.getElementById('formBtn').href = googleFormLink;
+  </script>
+</body>
+</html>
